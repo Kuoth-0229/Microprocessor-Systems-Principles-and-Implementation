@@ -1,0 +1,376 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 31.61      2.81     2.81 105288660     0.00     0.00  core_list_find
+ 15.64      4.20     1.39 104266440     0.00     0.00  core_list_reverse
+ 10.69      5.15     0.95 523376640     0.00     0.00  core_state_transition
+  9.79      6.02     0.87  2044440     0.00     0.00  matrix_mul_matrix_bitextract
+  9.00      6.82     0.80  2044440     0.00     0.00  matrix_mul_matrix
+  8.10      7.54     0.72 298488248     0.00     0.00  crcu8
+  4.27      7.92     0.38  8177760     0.00     0.00  matrix_sum
+  3.15      8.20     0.28  1022220     0.00     0.00  core_bench_list
+  1.57      8.34     0.14  2044440     0.00     0.00  core_bench_state
+  1.35      8.46     0.12  1533331     0.00     0.00  core_list_mergesort
+  0.90      8.54     0.08 149244124     0.00     0.00  crcu16
+  0.79      8.61     0.07  4088880     0.00     0.00  matrix_add_const
+  0.67      8.67     0.06  2044440     0.00     0.00  matrix_mul_const
+  0.56      8.72     0.05 56763450     0.00     0.00  cmp_complex
+  0.45      8.76     0.04 113526900     0.00     0.00  calc_func
+  0.45      8.80     0.04 32711040     0.00     0.00  crcu32
+  0.34      8.83     0.03 106336635     0.00     0.00  cmp_idx
+  0.34      8.86     0.03 68488744     0.00     0.00  crc16
+  0.22      8.88     0.02  2044440     0.00     0.00  matrix_mul_vect
+  0.11      8.89     0.01  2044440     0.00     0.00  matrix_test
+  0.00      8.89     0.00  2044440     0.00     0.00  core_bench_matrix
+  0.00      8.89     0.00  1022220     0.00     0.00  core_list_remove
+  0.00      8.89     0.00  1022220     0.00     0.00  core_list_undo_remove
+  0.00      8.89     0.00       32     0.00     0.00  core_list_insert_new
+  0.00      8.89     0.00       10     0.00     0.00  time_in_secs
+  0.00      8.89     0.00        6     0.00     0.00  get_seed_32
+  0.00      8.89     0.00        6     0.00     0.00  get_time
+  0.00      8.89     0.00        6     0.00     1.48  iterate
+  0.00      8.89     0.00        6     0.00     0.00  start_time
+  0.00      8.89     0.00        6     0.00     0.00  stop_time
+  0.00      8.89     0.00        1     0.00     0.00  check_data_types
+  0.00      8.89     0.00        1     0.00     0.00  core_init_matrix
+  0.00      8.89     0.00        1     0.00     0.00  core_init_state
+  0.00      8.89     0.00        1     0.00     0.00  core_list_init
+  0.00      8.89     0.00        1     0.00     0.00  portable_fini
+  0.00      8.89     0.00        1     0.00     0.00  portable_free
+  0.00      8.89     0.00        1     0.00     0.00  portable_init
+  0.00      8.89     0.00        1     0.00     0.00  portable_malloc
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.11% of 8.89 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    8.89                 main [1]
+                0.00    8.89       6/6           iterate [2]
+                0.00    0.00       1/1           core_list_init [24]
+                0.00    0.00       4/149244124     crcu16 [16]
+                0.00    0.00       4/298488248     crcu8 [15]
+                0.00    0.00       4/68488744     crc16 [22]
+                0.00    0.00      10/10          time_in_secs [28]
+                0.00    0.00       6/6           get_seed_32 [29]
+                0.00    0.00       6/6           start_time [31]
+                0.00    0.00       6/6           get_time [30]
+                0.00    0.00       6/6           stop_time [32]
+                0.00    0.00       1/1           portable_init [38]
+                0.00    0.00       1/1           portable_malloc [39]
+                0.00    0.00       1/1           core_init_state [35]
+                0.00    0.00       1/1           core_init_matrix [34]
+                0.00    0.00       1/1           check_data_types [33]
+                0.00    0.00       1/1           portable_fini [36]
+                0.00    0.00       1/1           portable_free [37]
+-----------------------------------------------
+                0.00    8.89       6/6           main [1]
+[2]    100.0    0.00    8.89       6         iterate [2]
+                0.28    8.60 1022220/1022220     core_bench_list [3]
+                0.00    0.00 1022220/149244124     crcu16 [16]
+                0.00    0.00 1022220/298488248     crcu8 [15]
+-----------------------------------------------
+                0.28    8.60 1022220/1022220     iterate [2]
+[3]     99.9    0.28    8.60 1022220         core_bench_list [3]
+                0.12    3.95 1533330/1533331     core_list_mergesort [4]
+                2.81    0.00 105288660/105288660     core_list_find [7]
+                1.39    0.00 104266440/104266440     core_list_reverse [11]
+                0.03    0.14 58266540/149244124     crcu16 [16]
+                0.14    0.00 58266540/298488248     crcu8 [15]
+                0.03    0.00 58266540/68488744     crc16 [22]
+                0.00    0.00 1022220/1022220     core_list_remove [25]
+                0.00    0.00 1022220/1022220     core_list_undo_remove [26]
+-----------------------------------------------
+                0.00    0.00       1/1533331     core_list_init [24]
+                0.12    3.95 1533330/1533331     core_bench_list [3]
+[4]     45.7    0.12    3.95 1533331         core_list_mergesort [4]
+                0.05    3.87 56763450/56763450     cmp_complex [5]
+                0.03    0.00 106336635/106336635     cmp_idx [21]
+-----------------------------------------------
+                0.05    3.87 56763450/56763450     core_list_mergesort [4]
+[5]     44.1    0.05    3.87 56763450         cmp_complex [5]
+                0.04    3.83 113526900/113526900     calc_func [6]
+-----------------------------------------------
+                0.04    3.83 113526900/113526900     cmp_complex [5]
+[6]     43.5    0.04    3.83 113526900         calc_func [6]
+                0.00    2.26 2044440/2044440     core_bench_matrix [8]
+                0.14    1.34 2044440/2044440     core_bench_state [10]
+                0.01    0.04 16355520/149244124     crcu16 [16]
+                0.04    0.00 16355520/298488248     crcu8 [15]
+                0.00    0.00 2044440/68488744     crc16 [22]
+-----------------------------------------------
+                2.81    0.00 105288660/105288660     core_bench_list [3]
+[7]     31.6    2.81    0.00 105288660         core_list_find [7]
+-----------------------------------------------
+                0.00    2.26 2044440/2044440     calc_func [6]
+[8]     25.4    0.00    2.26 2044440         core_bench_matrix [8]
+                0.01    2.25 2044440/2044440     matrix_test [9]
+-----------------------------------------------
+                0.01    2.25 2044440/2044440     core_bench_matrix [8]
+[9]     25.4    0.01    2.25 2044440         matrix_test [9]
+                0.87    0.00 2044440/2044440     matrix_mul_matrix_bitextract [13]
+                0.80    0.00 2044440/2044440     matrix_mul_matrix [14]
+                0.38    0.00 8177760/8177760     matrix_sum [17]
+                0.07    0.00 4088880/4088880     matrix_add_const [19]
+                0.06    0.00 2044440/2044440     matrix_mul_const [20]
+                0.00    0.02 8177760/149244124     crcu16 [16]
+                0.02    0.00 2044440/2044440     matrix_mul_vect [23]
+                0.02    0.00 8177760/298488248     crcu8 [15]
+                0.00    0.00 8177760/68488744     crc16 [22]
+-----------------------------------------------
+                0.14    1.34 2044440/2044440     calc_func [6]
+[10]    16.7    0.14    1.34 2044440         core_bench_state [10]
+                0.95    0.00 523376640/523376640     core_state_transition [12]
+                0.04    0.18 32711040/32711040     crcu32 [18]
+                0.02    0.08 32711040/149244124     crcu16 [16]
+                0.08    0.00 32711040/298488248     crcu8 [15]
+-----------------------------------------------
+                1.39    0.00 104266440/104266440     core_bench_list [3]
+[11]    15.6    1.39    0.00 104266440         core_list_reverse [11]
+-----------------------------------------------
+                0.95    0.00 523376640/523376640     core_bench_state [10]
+[12]    10.7    0.95    0.00 523376640         core_state_transition [12]
+-----------------------------------------------
+                0.87    0.00 2044440/2044440     matrix_test [9]
+[13]     9.8    0.87    0.00 2044440         matrix_mul_matrix_bitextract [13]
+-----------------------------------------------
+                0.80    0.00 2044440/2044440     matrix_test [9]
+[14]     9.0    0.80    0.00 2044440         matrix_mul_matrix [14]
+-----------------------------------------------
+                0.00    0.00       4/298488248     main [1]
+                0.00    0.00 1022220/298488248     iterate [2]
+                0.02    0.00 8177760/298488248     matrix_test [9]
+                0.04    0.00 16355520/298488248     calc_func [6]
+                0.08    0.00 32711040/298488248     crcu32 [18]
+                0.08    0.00 32711040/298488248     core_bench_state [10]
+                0.14    0.00 58266540/298488248     core_bench_list [3]
+                0.36    0.00 149244124/298488248     crcu16 [16]
+[15]     8.1    0.72    0.00 298488248         crcu8 [15]
+-----------------------------------------------
+                0.00    0.00       4/149244124     main [1]
+                0.00    0.00 1022220/149244124     iterate [2]
+                0.00    0.02 8177760/149244124     matrix_test [9]
+                0.01    0.04 16355520/149244124     calc_func [6]
+                0.02    0.08 32711040/149244124     crcu32 [18]
+                0.02    0.08 32711040/149244124     core_bench_state [10]
+                0.03    0.14 58266540/149244124     core_bench_list [3]
+[16]     4.9    0.08    0.36 149244124         crcu16 [16]
+                0.36    0.00 149244124/298488248     crcu8 [15]
+-----------------------------------------------
+                0.38    0.00 8177760/8177760     matrix_test [9]
+[17]     4.3    0.38    0.00 8177760         matrix_sum [17]
+-----------------------------------------------
+                0.04    0.18 32711040/32711040     core_bench_state [10]
+[18]     2.4    0.04    0.18 32711040         crcu32 [18]
+                0.02    0.08 32711040/149244124     crcu16 [16]
+                0.08    0.00 32711040/298488248     crcu8 [15]
+-----------------------------------------------
+                0.07    0.00 4088880/4088880     matrix_test [9]
+[19]     0.8    0.07    0.00 4088880         matrix_add_const [19]
+-----------------------------------------------
+                0.06    0.00 2044440/2044440     matrix_test [9]
+[20]     0.7    0.06    0.00 2044440         matrix_mul_const [20]
+-----------------------------------------------
+                0.03    0.00 106336635/106336635     core_list_mergesort [4]
+[21]     0.3    0.03    0.00 106336635         cmp_idx [21]
+-----------------------------------------------
+                0.00    0.00       4/68488744     main [1]
+                0.00    0.00 2044440/68488744     calc_func [6]
+                0.00    0.00 8177760/68488744     matrix_test [9]
+                0.03    0.00 58266540/68488744     core_bench_list [3]
+[22]     0.3    0.03    0.00 68488744         crc16 [22]
+-----------------------------------------------
+                0.02    0.00 2044440/2044440     matrix_test [9]
+[23]     0.2    0.02    0.00 2044440         matrix_mul_vect [23]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[24]     0.0    0.00    0.00       1         core_list_init [24]
+                0.00    0.00       1/1533331     core_list_mergesort [4]
+                0.00    0.00      32/32          core_list_insert_new [27]
+-----------------------------------------------
+                0.00    0.00 1022220/1022220     core_bench_list [3]
+[25]     0.0    0.00    0.00 1022220         core_list_remove [25]
+-----------------------------------------------
+                0.00    0.00 1022220/1022220     core_bench_list [3]
+[26]     0.0    0.00    0.00 1022220         core_list_undo_remove [26]
+-----------------------------------------------
+                0.00    0.00      32/32          core_list_init [24]
+[27]     0.0    0.00    0.00      32         core_list_insert_new [27]
+-----------------------------------------------
+                0.00    0.00      10/10          main [1]
+[28]     0.0    0.00    0.00      10         time_in_secs [28]
+-----------------------------------------------
+                0.00    0.00       6/6           main [1]
+[29]     0.0    0.00    0.00       6         get_seed_32 [29]
+-----------------------------------------------
+                0.00    0.00       6/6           main [1]
+[30]     0.0    0.00    0.00       6         get_time [30]
+-----------------------------------------------
+                0.00    0.00       6/6           main [1]
+[31]     0.0    0.00    0.00       6         start_time [31]
+-----------------------------------------------
+                0.00    0.00       6/6           main [1]
+[32]     0.0    0.00    0.00       6         stop_time [32]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[33]     0.0    0.00    0.00       1         check_data_types [33]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[34]     0.0    0.00    0.00       1         core_init_matrix [34]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[35]     0.0    0.00    0.00       1         core_init_state [35]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[36]     0.0    0.00    0.00       1         portable_fini [36]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[37]     0.0    0.00    0.00       1         portable_free [37]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[38]     0.0    0.00    0.00       1         portable_init [38]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[39]     0.0    0.00    0.00       1         portable_malloc [39]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [6] calc_func              [25] core_list_remove       [14] matrix_mul_matrix
+  [33] check_data_types       [11] core_list_reverse      [13] matrix_mul_matrix_bitextract
+   [5] cmp_complex            [26] core_list_undo_remove  [23] matrix_mul_vect
+  [21] cmp_idx                [12] core_state_transition  [17] matrix_sum
+   [3] core_bench_list        [22] crc16                   [9] matrix_test
+   [8] core_bench_matrix      [16] crcu16                 [36] portable_fini
+  [10] core_bench_state       [18] crcu32                 [37] portable_free
+  [34] core_init_matrix       [15] crcu8                  [38] portable_init
+  [35] core_init_state        [29] get_seed_32            [39] portable_malloc
+   [7] core_list_find         [30] get_time               [31] start_time
+  [24] core_list_init          [2] iterate                [32] stop_time
+  [27] core_list_insert_new   [19] matrix_add_const       [28] time_in_secs
+   [4] core_list_mergesort    [20] matrix_mul_const

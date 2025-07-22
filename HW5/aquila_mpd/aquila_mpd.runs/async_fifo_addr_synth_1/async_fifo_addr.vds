@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 14 10:10:16 2025
+# Process ID: 331923
+# Current directory: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/async_fifo_addr_synth_1
+# Command line: vivado -log async_fifo_addr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source async_fifo_addr.tcl
+# Log file: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/async_fifo_addr_synth_1/async_fifo_addr.vds
+# Journal file: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/async_fifo_addr_synth_1/vivado.jou
+# Running On        :kuoth-VivoBook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency     :1199.987 MHz
+# CPU Physical cores:12
+# CPU Logical cores :16
+# Host memory       :16369 MB
+# Swap memory       :2147 MB
+# Total Virtual     :18517 MB
+# Available Virtual :12505 MB
+#-----------------------------------------------------------
+source async_fifo_addr.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1423.457 ; gain = 0.023 ; free physical = 4073 ; free virtual = 8580
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: async_fifo_addr
+Command: synth_design -top async_fifo_addr -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 334862
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2167.211 ; gain = 418.746 ; free physical = 246 ; free virtual = 1215
+---------------------------------------------------------------------------------

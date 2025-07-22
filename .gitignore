@@ -1,0 +1,13 @@
+*.vcd
+*.o
+*.bin
+*.log
+*.tar.gz
+*.zip
+*.img
+*.iso
+build/
+output/
+waveform/
+.vscode/
+__pycache__/

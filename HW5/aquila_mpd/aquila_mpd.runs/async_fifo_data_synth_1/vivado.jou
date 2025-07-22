@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 14 10:10:16 2025
+# Process ID: 331919
+# Current directory: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/async_fifo_data_synth_1
+# Command line: vivado -log async_fifo_data.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source async_fifo_data.tcl
+# Log file: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/async_fifo_data_synth_1/async_fifo_data.vds
+# Journal file: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/async_fifo_data_synth_1/vivado.jou
+# Running On        :kuoth-VivoBook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency     :1200.012 MHz
+# CPU Physical cores:12
+# CPU Logical cores :16
+# Host memory       :16369 MB
+# Swap memory       :2147 MB
+# Total Virtual     :18517 MB
+# Available Virtual :12472 MB
+#-----------------------------------------------------------
+source async_fifo_data.tcl -notrace

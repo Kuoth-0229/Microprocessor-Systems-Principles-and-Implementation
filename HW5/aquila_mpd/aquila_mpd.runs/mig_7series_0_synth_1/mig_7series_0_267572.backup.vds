@@ -1,0 +1,581 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 14 09:54:05 2025
+# Process ID: 267572
+# Current directory: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/mig_7series_0_synth_1
+# Command line: vivado -log mig_7series_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mig_7series_0.tcl
+# Log file: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/mig_7series_0_synth_1/mig_7series_0.vds
+# Journal file: /home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.runs/mig_7series_0_synth_1/vivado.jou
+# Running On        :kuoth-VivoBook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency     :3599.676 MHz
+# CPU Physical cores:12
+# CPU Logical cores :16
+# Host memory       :16369 MB
+# Swap memory       :2147 MB
+# Total Virtual     :18517 MB
+# Available Virtual :12568 MB
+#-----------------------------------------------------------
+source mig_7series_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1434.359 ; gain = 126.789 ; free physical = 3571 ; free virtual = 9037
+Command: synth_design -top mig_7series_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 269157
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2174.168 ; gain = 412.801 ; free physical = 165 ; free virtual = 3424
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10515] begin/end is required for generate-for in this mode of Verilog [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:253]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_sel_po_incdec', assumed default net type 'wire' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:1096]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_inc', assumed default net type 'wire' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:1100]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_stg23_sel', assumed default net type 'wire' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:1101]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_dec', assumed default net type 'wire' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:1102]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0_mig' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:75]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_tempmon' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v:69]
+	Parameter TCQ bound to: 100 - type: integer 
+	Parameter TEMP_MON_CONTROL bound to: INTERNAL - type: string 
+	Parameter XADC_CLK_PERIOD bound to: 5000 - type: integer 
+	Parameter tTEMPSAMPLE bound to: 10000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'XADC' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:143027]
+	Parameter INIT_40 bound to: 16'b0001000000000000 
+	Parameter INIT_41 bound to: 16'b0010111111111111 
+	Parameter INIT_42 bound to: 16'b0000100000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000001 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000100000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:143027]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_tempmon' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v:69]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_iodelay_ctrl' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v:80]
+	Parameter TCQ bound to: 100 - type: integer 
+	Parameter IODELAY_GRP0 bound to: MIG_7SERIES_0_IODELAY_MIG0 - type: string 
+	Parameter IODELAY_GRP1 bound to: MIG_7SERIES_0_IODELAY_MIG1 - type: string 
+	Parameter REFCLK_TYPE bound to: NO_BUFFER - type: string 
+	Parameter SYSCLK_TYPE bound to: NO_BUFFER - type: string 
+	Parameter SYS_RST_PORT bound to: FALSE - type: string 
+	Parameter RST_ACT_LOW bound to: 1 - type: integer 
+	Parameter DIFF_TERM_REFCLK bound to: TRUE - type: string 
+	Parameter FPGA_SPEED_GRADE bound to: 1 - type: integer 
+	Parameter REF_CLK_MMCM_IODELAY_CTRL bound to: FALSE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:75739]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:75739]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_iodelay_ctrl' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v:80]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_clk_ibuf' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v:68]
+	Parameter SYSCLK_TYPE bound to: NO_BUFFER - type: string 
+	Parameter DIFF_TERM_SYSCLK bound to: TRUE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_clk_ibuf' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v:68]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_infrastructure' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:78]
+	Parameter TCQ bound to: 100 - type: integer 
+	Parameter CLKIN_PERIOD bound to: 6000 - type: integer 
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter SYSCLK_TYPE bound to: NO_BUFFER - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 64 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 16 - type: integer 
+	Parameter MMCM_VCO bound to: 666 - type: integer 
+	Parameter MMCM_MULT_F bound to: 8 - type: integer 
+	Parameter MMCM_DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter RST_ACT_LOW bound to: 1 - type: integer 
+	Parameter tCK bound to: 3000 - type: integer 
+	Parameter MEM_TYPE bound to: DDR3 - type: string 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+	Parameter BANDWIDTH bound to: HIGH - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 12.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 16.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: TRUE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: BUF_IN - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114750]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 6.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 64 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.062500 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 9.843750 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 168.750000 - type: double 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter COMPENSATION bound to: INTERNAL - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114750]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2199]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2199]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_infrastructure' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:78]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_memc_ui_top_std' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:71]
+	Parameter TCQ bound to: 100 - type: integer 
+	Parameter DDR3_VDD_OP_VOLT bound to: 135 - type: string 
+	Parameter PAYLOAD_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_CMD_MODE bound to: 1T - type: string 
+	Parameter AL bound to: 0 - type: string 
+	Parameter BANK_WIDTH bound to: 3 - type: integer 
+	Parameter BM_CNT_WIDTH bound to: 2 - type: integer 
+	Parameter BURST_MODE bound to: 8 - type: string 
+	Parameter BURST_TYPE bound to: SEQ - type: string 
+	Parameter CA_MIRROR bound to: OFF - type: string 
+	Parameter CK_WIDTH bound to: 1 - type: integer 
+	Parameter CL bound to: 5 - type: integer 
+	Parameter COL_WIDTH bound to: 10 - type: integer 
+	Parameter CMD_PIPE_PLUS1 bound to: ON - type: string 
+	Parameter CS_WIDTH bound to: 1 - type: integer 
+	Parameter CKE_WIDTH bound to: 1 - type: integer 
+	Parameter CWL bound to: 5 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DATA_BUF_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter DM_WIDTH bound to: 2 - type: integer 
+	Parameter DQ_CNT_WIDTH bound to: 4 - type: integer 
+	Parameter DQ_WIDTH bound to: 16 - type: integer 
+	Parameter DQS_CNT_WIDTH bound to: 1 - type: integer 
+	Parameter DQS_WIDTH bound to: 2 - type: integer 
+	Parameter DRAM_TYPE bound to: DDR3 - type: string 
+	Parameter DRAM_WIDTH bound to: 8 - type: integer 
+	Parameter ECC bound to: OFF - type: string 
+	Parameter ECC_WIDTH bound to: 0 - type: integer 
+	Parameter ECC_TEST bound to: OFF - type: string 
+	Parameter MC_ERR_ADDR_WIDTH bound to: 28 - type: integer 
+	Parameter MASTER_PHY_CTL bound to: 0 - type: integer 
+	Parameter nAL bound to: 0 - type: integer 
+	Parameter nBANK_MACHS bound to: 4 - type: integer 
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter nCS_PER_RANK bound to: 1 - type: integer 
+	Parameter ORDERING bound to: NORM - type: string 
+	Parameter IBUF_LPWR_MODE bound to: OFF - type: string 
+	Parameter BANK_TYPE bound to: HR_IO - type: string 
+	Parameter DATA_IO_PRIM_TYPE bound to: HR_LP - type: string 
+	Parameter DATA_IO_IDLE_PWRDWN bound to: ON - type: string 
+	Parameter IODELAY_GRP0 bound to: MIG_7SERIES_0_IODELAY_MIG0 - type: string 
+	Parameter IODELAY_GRP1 bound to: MIG_7SERIES_0_IODELAY_MIG1 - type: string 
+	Parameter FPGA_SPEED_GRADE bound to: 1 - type: integer 
+	Parameter OUTPUT_DRV bound to: LOW - type: string 
+	Parameter REG_CTRL bound to: OFF - type: string 
+	Parameter RTT_NOM bound to: 40 - type: string 
+	Parameter RTT_WR bound to: OFF - type: string 
+	Parameter STARVE_LIMIT bound to: 2 - type: integer 
+	Parameter tCK bound to: 3000 - type: integer 
+	Parameter tCKE bound to: 5625 - type: integer 
+	Parameter tFAW bound to: 45000 - type: integer 
+	Parameter tPRDI bound to: 1000000 - type: integer 
+	Parameter tRAS bound to: 36000 - type: integer 
+	Parameter tRCD bound to: 13500 - type: integer 
+	Parameter tREFI bound to: 7800000 - type: integer 
+	Parameter tRFC bound to: 160000 - type: integer 
+	Parameter tRP bound to: 13500 - type: integer 
+	Parameter tRRD bound to: 7500 - type: integer 
+	Parameter tRTP bound to: 7500 - type: integer 
+	Parameter tWTR bound to: 7500 - type: integer 
+	Parameter tZQI bound to: 128000000 - type: integer 
+	Parameter tZQCS bound to: 64 - type: integer 
+	Parameter USER_REFRESH bound to: OFF - type: string 
+	Parameter TEMP_MON_EN bound to: ON - type: string 
+	Parameter WRLVL bound to: ON - type: string 
+	Parameter DEBUG_PORT bound to: OFF - type: string 
+	Parameter CAL_WIDTH bound to: HALF - type: string 
+	Parameter RANK_WIDTH bound to: 1 - type: integer 
+	Parameter RANKS bound to: 1 - type: integer 
+	Parameter ODT_WIDTH bound to: 1 - type: integer 
+	Parameter ROW_WIDTH bound to: 14 - type: integer 
+	Parameter ADDR_WIDTH bound to: 28 - type: integer 
+	Parameter APP_MASK_WIDTH bound to: 16 - type: integer 
+	Parameter APP_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter BYTE_LANES_B0 bound to: 4'b1111 
+	Parameter BYTE_LANES_B1 bound to: 4'b0000 
+	Parameter BYTE_LANES_B2 bound to: 4'b0000 
+	Parameter BYTE_LANES_B3 bound to: 4'b0000 
+	Parameter BYTE_LANES_B4 bound to: 4'b0000 
+	Parameter DATA_CTL_B0 bound to: 4'b1100 
+	Parameter DATA_CTL_B1 bound to: 4'b0000 
+	Parameter DATA_CTL_B2 bound to: 4'b0000 
+	Parameter DATA_CTL_B3 bound to: 4'b0000 
+	Parameter DATA_CTL_B4 bound to: 4'b0000 
+	Parameter PHY_0_BITLANES bound to: 48'b001111111110001111111110111111111111101111111111 
+	Parameter PHY_1_BITLANES bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PHY_2_BITLANES bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter CK_BYTE_MAP bound to: 144'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ADDR_MAP bound to: 192'b000000000000000000000000000000000000000000000010000000000100000000001001000000000111000000000001000000000101000000000110000000000011000000010000000000010010000000010100000000010001000000011010 
+	Parameter BANK_MAP bound to: 36'b000000011011000000010111000000010011 
+	Parameter CAS_MAP bound to: 12'b000000010101 
+	Parameter CKE_ODT_BYTE_MAP bound to: 8'b00000000 
+	Parameter CKE_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011001 
+	Parameter ODT_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000 
+	Parameter CKE_ODT_AUX bound to: FALSE - type: string 
+	Parameter CS_MAP bound to: 120'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001011 
+	Parameter PARITY_MAP bound to: 12'b000000000000 
+	Parameter RAS_MAP bound to: 12'b000000010110 
+	Parameter WE_MAP bound to: 12'b000000011000 
+	Parameter DQS_BYTE_MAP bound to: 144'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000011 
+	Parameter DATA0_MAP bound to: 96'b000000110100000000110010000000111000000000110101000000110001000000110111000000110110000000110011 
+	Parameter DATA1_MAP bound to: 96'b000000100011000000100110000000100010000000101000000000100101000000100111000000100001000000100100 
+	Parameter DATA2_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA3_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA4_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA5_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA6_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA7_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA8_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA9_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA10_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA11_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA12_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA13_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA14_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA15_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA16_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter DATA17_MAP bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter MASK0_MAP bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101001000000111001 
+	Parameter MASK1_MAP bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SLOT_0_CONFIG bound to: 8'b00000001 
+	Parameter SLOT_1_CONFIG bound to: 8'b00000000 
+	Parameter MEM_ADDR_ORDER bound to: BANK_ROW_COLUMN - type: string 
+	Parameter CALIB_ROW_ADD bound to: 16'b0000000000000000 
+	Parameter CALIB_COL_ADD bound to: 12'b000000000000 
+	Parameter CALIB_BA_ADD bound to: 3'b000 
+	Parameter SIM_BYPASS_INIT_CAL bound to: OFF - type: string 
+	Parameter REFCLK_FREQ bound to: 200.000000 - type: double 
+	Parameter USE_CS_PORT bound to: 1 - type: integer 
+	Parameter USE_DM_PORT bound to: 1 - type: integer 
+	Parameter USE_ODT_PORT bound to: 1 - type: integer 
+	Parameter IDELAY_ADJ bound to: OFF - type: string 
+	Parameter FINE_PER_BIT bound to: OFF - type: string 
+	Parameter CENTER_COMP_MODE bound to: OFF - type: string 
+	Parameter PI_VAL_ADJ bound to: OFF - type: string 
+	Parameter SKIP_CALIB bound to: FALSE - type: string 
+	Parameter TAPSPERKCLK bound to: 112 - type: integer 
+	Parameter FPGA_VOLT_TYPE bound to: N - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_mem_intfc' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_mc' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_mach' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_cntrl' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:79]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137412]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137412]
+WARNING: [Synth 8-567] referenced signal 'periodic_rd_generation.periodic_rd_timer_one' should be on the sensitivity list [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:509]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_cntrl' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:79]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_common' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v:72]
+WARNING: [Synth 8-567] referenced signal 'zq_cntrl.zq_tick' should be on the sensitivity list [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v:172]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_common' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_mach' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_mach' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v:72]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_compare' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_compare' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:74]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized1' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized1' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized1' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized2' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized2' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized2' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized2' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized2' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized2' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_common' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_common' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_mux' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v:69]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_row_col' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:83]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized1' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_row_col' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:83]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_select' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_select' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_mux' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_mach' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v:72]
+WARNING: [Synth 8-7071] port 'idle' of module 'mig_7series_v4_2_bank_mach' is unconnected for instance 'bank_mach0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:670]
+WARNING: [Synth 8-7023] instance 'bank_mach0' of module 'mig_7series_v4_2_bank_mach' has 74 connections declared, but only 73 given [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:670]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_col_mach' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:88]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:129077]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:129077]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_col_mach' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_mc' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_top' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_mc_phy_wrapper' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96458]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96458]
+INFO: [Synth 8-6157] synthesizing module 'OBUFT' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96846]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFT' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96846]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF_INTERMDISABLE' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:79002]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF_INTERMDISABLE' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:79002]
+INFO: [Synth 8-6157] synthesizing module 'IOBUFDS_INTERMDISABLE' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78516]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS_INTERMDISABLE' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78516]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1428]
+WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_0' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1428]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1445]
+WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_1' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1445]
+WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_2' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1462]
+WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_2' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1462]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_mc_phy' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_4lanes' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized1' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100102]
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100102]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96472]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96472]
+INFO: [Synth 8-6157] synthesizing module 'PHASER_OUT_PHY' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114573]
+INFO: [Synth 8-6155] done synthesizing module 'PHASER_OUT_PHY' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114573]
+INFO: [Synth 8-6157] synthesizing module 'OUT_FIFO' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100824]
+INFO: [Synth 8-6155] done synthesizing module 'OUT_FIFO' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100824]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100709]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100709]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized0' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_if_post_fifo' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_if_post_fifo' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-6157] synthesizing module 'PHASER_IN_PHY' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114436]
+INFO: [Synth 8-6155] done synthesizing module 'PHASER_IN_PHY' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114436]
+INFO: [Synth 8-6157] synthesizing module 'IN_FIFO' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78141]
+INFO: [Synth 8-6155] done synthesizing module 'IN_FIFO' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78141]
+INFO: [Synth 8-6157] synthesizing module 'PHASER_OUT_PHY__parameterized0' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114573]
+INFO: [Synth 8-6155] done synthesizing module 'PHASER_OUT_PHY__parameterized0' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114573]
+INFO: [Synth 8-6157] synthesizing module 'OUT_FIFO__parameterized0' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100824]
+INFO: [Synth 8-6155] done synthesizing module 'OUT_FIFO__parameterized0' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100824]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized1' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:75752]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:75752]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:80773]
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:80773]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100709]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100709]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized1' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100709]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized1' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100709]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized1' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized1' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized2' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized2' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2224]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2224]
+INFO: [Synth 8-6157] synthesizing module 'PHY_CONTROL' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114664]
+INFO: [Synth 8-6155] done synthesizing module 'PHY_CONTROL' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114664]
+INFO: [Synth 8-226] default block is never used [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:1557]
+INFO: [Synth 8-6157] synthesizing module 'PHASER_REF' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114648]
+INFO: [Synth 8-6155] done synthesizing module 'PHASER_REF' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:114648]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_4lanes' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_mc_phy' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v:70]
+WARNING: [Synth 8-689] width (12) of port connection 'pi_dqs_found_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_mc_phy' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
+WARNING: [Synth 8-689] width (12) of port connection 'pi_phase_locked_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_mc_phy' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
+WARNING: [Synth 8-7071] port 'of_data_a_full' of module 'mig_7series_v4_2_ddr_mc_phy' is unconnected for instance 'u_ddr_mc_phy' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1579]
+WARNING: [Synth 8-7023] instance 'u_ddr_mc_phy' of module 'mig_7series_v4_2_ddr_mc_phy' has 89 connections declared, but only 88 given [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1579]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_mc_phy_wrapper' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_calib_top' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:82]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_wrlvl' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:797]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_wrlvl' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:90]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v:68]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_rdlvl' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:79]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2746]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_rdlvl' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:79]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_prbs_gen' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:92]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'rd_addr' is not inferred as ram due to incorrect usage [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:203]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'mem_out' is not inferred as ram due to incorrect usage [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:205]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_prbs_gen' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:92]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_init' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:89]
+INFO: [Synth 8-226] default block is never used [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:5273]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_init' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:89]
+WARNING: [Synth 8-7071] port 'complex_oclk_prech_req' of module 'mig_7series_v4_2_ddr_phy_init' is unconnected for instance 'u_ddr_phy_init' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1367]
+WARNING: [Synth 8-7023] instance 'u_ddr_phy_init' of module 'mig_7series_v4_2_ddr_phy_init' has 131 connections declared, but only 130 given [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1367]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_wrcal' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:1130]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_wrcal' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_tempmon' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_tempmon' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_calib_top' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:82]
+WARNING: [Synth 8-689] width (12) of port connection 'pi_dqs_found_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_calib_top' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1340]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_top' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_mem_intfc' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_top' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_cmd' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_cmd' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_wr_data' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:342]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:380]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_wr_data' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:131]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_rd_data' [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:140]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:406]
+WARNING: [Synth 8-567] referenced signal 'not_strict_mode.occ_cnt_r' should be on the sensitivity list [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:403]
+WARNING: [Synth 8-567] referenced signal 'not_strict_mode.free_rd_buf' should be on the sensitivity list [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:403]
+WARNING: [Synth 8-567] referenced signal 'not_strict_mode.occ_minus_one' should be on the sensitivity list [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:403]
+WARNING: [Synth 8-567] referenced signal 'not_strict_mode.occ_plus_one' should be on the sensitivity list [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:403]
+WARNING: [Synth 8-567] referenced signal 'not_strict_mode.rd_data_buf_addr_r_lcl' should be on the sensitivity list [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:432]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_rd_data' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_top' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_memc_ui_top_std' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0_mig' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (0#1) [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v:70]
+WARNING: [Synth 8-3848] Net ui_addn_clk_0 in module/entity mig_7series_v4_2_infrastructure does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:140]
+WARNING: [Synth 8-3848] Net ui_addn_clk_1 in module/entity mig_7series_v4_2_infrastructure does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:141]
+WARNING: [Synth 8-3848] Net ui_addn_clk_2 in module/entity mig_7series_v4_2_infrastructure does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:142]
+WARNING: [Synth 8-3848] Net ui_addn_clk_3 in module/entity mig_7series_v4_2_infrastructure does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:143]
+WARNING: [Synth 8-3848] Net ui_addn_clk_4 in module/entity mig_7series_v4_2_infrastructure does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:144]
+WARNING: [Synth 8-6014] Unused sequential element periodic_rd_generation.read_this_rank_r1_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:487]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_req_reg' and it is trimmed from '6' to '5' bits. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:145]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_last_master_ns_reg' and it is trimmed from '6' to '4' bits. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:143]
+WARNING: [Synth 8-6014] Unused sequential element last_master_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:181]
+WARNING: [Synth 8-3848] Net channel[0].inh_group in module/entity mig_7series_v4_2_round_robin_arb__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:153]
+WARNING: [Synth 8-3936] Found unconnected internal register 'col_addr_template_reg' and it is trimmed from '16' to '14' bits. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:251]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_req_reg' and it is trimmed from '8' to '7' bits. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:145]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_last_master_ns_reg' and it is trimmed from '8' to '6' bits. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:143]
+WARNING: [Synth 8-6014] Unused sequential element sent_row_or_maint_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:357]
+WARNING: [Synth 8-6014] Unused sequential element mc_aux_out_r_1_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:680]
+WARNING: [Synth 8-6014] Unused sequential element mc_aux_out_r_2_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:681]
+WARNING: [Synth 8-3848] Net col_mux.col_row_r in module/entity mig_7series_v4_2_arb_select does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:390]
+WARNING: [Synth 8-3936] Found unconnected internal register 'read_fifo.fifo_out_data_r_reg' and it is trimmed from '12' to '8' bits. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:396]
+WARNING: [Synth 8-3848] Net oserdes_dqts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:143]
+WARNING: [Synth 8-3848] Net oserdes_dqs_buf in module/entity mig_7series_v4_2_ddr_byte_group_io does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:144]
+WARNING: [Synth 8-3848] Net oserdes_dqsts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:145]
+WARNING: [Synth 8-3848] Net iserdes_dout in module/entity mig_7series_v4_2_ddr_byte_group_io does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:92]
+WARNING: [Synth 8-6014] Unused sequential element ififo_rst_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:307]
+WARNING: [Synth 8-3848] Net rclk in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:147]
+WARNING: [Synth 8-3848] Net pi_iserdes_rst in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:193]
+WARNING: [Synth 8-3848] Net pi_fine_overflow in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:195]
+WARNING: [Synth 8-3848] Net pi_counter_read_val_w in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:431]
+WARNING: [Synth 8-3848] Net dqs_out_of_range in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:198]
+WARNING: [Synth 8-3848] Net iserdes_clk in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:275]
+WARNING: [Synth 8-3848] Net iserdes_clkdiv in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:276]
+WARNING: [Synth 8-3848] Net oserdes_dqts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:143]
+WARNING: [Synth 8-3848] Net oserdes_dqs_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:144]
+WARNING: [Synth 8-3848] Net oserdes_dqsts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:145]
+WARNING: [Synth 8-3848] Net iserdes_dout in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:92]
+WARNING: [Synth 8-6014] Unused sequential element ififo_rst_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:307]
+WARNING: [Synth 8-3848] Net rclk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:147]
+WARNING: [Synth 8-3848] Net pi_iserdes_rst in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:193]
+WARNING: [Synth 8-3848] Net pi_fine_overflow in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:195]
+WARNING: [Synth 8-3848] Net pi_counter_read_val_w in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:431]
+WARNING: [Synth 8-3848] Net dqs_out_of_range in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:198]
+WARNING: [Synth 8-3848] Net iserdes_clk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:275]
+WARNING: [Synth 8-3848] Net iserdes_clkdiv in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:276]
+WARNING: [Synth 8-6014] Unused sequential element fine_delay_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:185]
+WARNING: [Synth 8-3848] Net dummy_i5 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized1 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:269]
+WARNING: [Synth 8-3848] Net dummy_i6 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized1 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:270]
+WARNING: [Synth 8-3848] Net dummy_i5 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:269]
+WARNING: [Synth 8-3848] Net dummy_i6 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:270]
+WARNING: [Synth 8-6014] Unused sequential element B_rst_primitives_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:737]
+WARNING: [Synth 8-6014] Unused sequential element C_rst_primitives_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:738]
+WARNING: [Synth 8-6014] Unused sequential element D_rst_primitives_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:739]
+WARNING: [Synth 8-3936] Found unconnected internal register 'byte_sel_data_map_reg' and it is trimmed from '96' to '88' bits. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:731]
+WARNING: [Synth 8-3848] Net phy_data_full in module/entity mig_7series_v4_2_ddr_mc_phy_wrapper does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:227]
+WARNING: [Synth 8-6014] Unused sequential element fast_cal_fine_cnt_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:790]
+WARNING: [Synth 8-6014] Unused sequential element fast_cal_coarse_cnt_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:791]
+WARNING: [Synth 8-6014] Unused sequential element final_corse_dec_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:792]
+WARNING: [Synth 8-6014] Unused sequential element add_smallest_reg[1] was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:516]
+WARNING: [Synth 8-6014] Unused sequential element add_largest_reg[0] was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:517]
+WARNING: [Synth 8-6014] Unused sequential element add_largest_reg[1] was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:517]
+WARNING: [Synth 8-6014] Unused sequential element dqs_wl_po_en_stg2_c_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v:628]
+WARNING: [Synth 8-6014] Unused sequential element po_en_stg2_c_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v:162]
+WARNING: [Synth 8-6014] Unused sequential element rank_final_loop[0].final_do_max_reg[0] was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:1116]
+WARNING: [Synth 8-6014] Unused sequential element rank_final_loop[0].final_do_index_reg[0] was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:1146]
+WARNING: [Synth 8-6014] Unused sequential element dqsfound_retry_r1_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:690]
+WARNING: [Synth 8-3848] Net dqsfound_retry_done in module/entity mig_7series_v4_2_ddr_phy_dqs_found_cal_hr does not have driver. [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:131]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[0].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[1].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[2].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[3].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[4].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[5].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[6].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[7].pb_found_first_edge_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r1_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:686]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r2_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:687]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r3_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:688]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r1_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:689]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r2_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:690]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r3_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:691]
+WARNING: [Synth 8-6014] Unused sequential element fine_dly_dec_done_r3_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:940]
+WARNING: [Synth 8-6014] Unused sequential element fine_dly_dec_done_r4_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:941]
+WARNING: [Synth 8-6014] Unused sequential element regl_rank_done_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:1044]
+WARNING: [Synth 8-6014] Unused sequential element cal1_state_r2_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2696]
+WARNING: [Synth 8-6014] Unused sequential element cal1_state_r3_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2697]
+WARNING: [Synth 8-6014] Unused sequential element cal1_cnt_cpt_timing_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:610]
+WARNING: [Synth 8-6014] Unused sequential element sample_cnt_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:156]
+WARNING: [Synth 8-6014] Unused sequential element reseed_prbs_r_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:157]
+WARNING: [Synth 8-6014] Unused sequential element lfsr_q_reg was removed.  [/home/kuoth/school/mp/hw5/hw5_111550105/aquila_mpd/aquila_mpd.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:174]
